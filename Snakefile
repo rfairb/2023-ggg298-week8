@@ -1,4 +1,7 @@
-rule hello:
-    output: 'hello.txt'
+rule all:
+    input: "hello.txt", "howdy.txt"
+    
+rule howdy:
+    output: "howdy.txt"
     shell:
-        "echo hello, world > hello.txt"
+        "echo yeah texas > howdy.txt"
